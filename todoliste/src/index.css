@@ -1,0 +1,122 @@
+/* Base background and font */
+body {
+  background-color: #e9ecef; /* light gray */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main container */
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background: #ffffff; /* white */
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Titles */
+.title {
+  text-align: center;
+  color: #0077b6; /* nice blue */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* New todo form */
+.new-todo-form {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+/* Input field */
+.todo-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Add button */
+.add-btn {
+  padding: 10px 20px;
+  margin-left: 10px;
+  background-color: #0077b6; /* same blue */
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.add-btn:hover {
+  background-color: #005f87; /* darker blue on hover */
+}
+
+/* Todo list styles */
+.todo-list {
+  list-style: none;
+  padding: 0;
+}
+
+/* Each todo item */
+.todo-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0;
+  border-bottom: 1px solid #dee2e6;
+}
+
+/* Label with checkbox and text */
+.todo-label {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Completed task style */
+.completed {
+  text-decoration: line-through;
+  color: #6c757d; /* softer gray */
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #dc3545; /* Bootstrap red */
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+/* Empty state message */
+.empty-state {
+  text-align: center;
+  color: #6c757d; /* muted gray */
+  font-style: italic;
+  margin-top: 20px;
+}
+
+/* Optional: nicer scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #bbb;
+}
