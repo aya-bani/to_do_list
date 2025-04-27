@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Active at Home - Find Your Perfect Workout</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1>Active at Home</h1>
+            <div class="search-sort">
+                <input type="text" id="searchInput" placeholder="Search workouts..." class="search-input">
+                <select id="sortSelect" class="sort-select">
+                    <option value="default">Featured</option>
+                    <option value="duration-asc">Duration (Shortest first)</option>
+                    <option value="duration-desc">Duration (Longest first)</option>
+                    <option value="alphabetical">Alphabetical (A-Z)</option>
+                </select>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="featured-workout">
+            <div class="featured-content">
+                <h2>Total Body HIIT Challenge</h2>
+                <p>This 45-minute high-intensity interval training workout will push your limits and help you achieve maximum results in minimum time.</p>
+                <a href="https://www.youtube.com/watch?v=ml6cT4AZdqI" target="_blank" class="cta-button">Start Workout</a>
+            </div>
+        </section>
+
+        <section class="categories">
+            <div class="category">
+                <div class="category-header">
+                    <h2>Yoga</h2>
+                    <p>Improve flexibility, build strength, and find inner peace</p>
+                    <button class="toggle-btn">
+                        <span class="chevron"></span>
+                    </button>
+                </div>
+                <div class="workouts-grid">
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 Active at Home. Find your perfect workout and stay fit.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
